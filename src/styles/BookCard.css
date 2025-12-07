@@ -1,0 +1,100 @@
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+}
+
+.card-img-box {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  color: #6a1b9a;
+}
+
+.card-author {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card-category {
+  font-size: 12px;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #444;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.card-btn {
+  padding: 8px 14px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: #4a0072;
+}
+
+.card-btn.added {
+  background: #2e7d32;
+}

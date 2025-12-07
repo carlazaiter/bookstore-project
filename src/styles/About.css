@@ -1,0 +1,88 @@
+.aboutPage {
+  width: 100%;
+}
+
+.aboutHeader {
+  background-color: oklch(0.97 0.01 85);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.aboutHeader h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-family: 'Lobster', serif;
+  color:#0c6634;
+}
+
+.aboutHeader p {
+  font-size: 19px;
+  color: #197442;
+  font-family: 'Lobster', serif;
+}
+
+.aboutContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.aboutSection {
+  margin-bottom: 50px;
+}
+
+.aboutSection h2 {
+  font-size: 30px;
+  color:#0f6d3a;
+  margin-bottom: 20px;
+  font-family: 'Lobster', serif;
+}
+
+.aboutSection p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1d4130;
+  margin-bottom: 15px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 24px;
+  color:#0c6634;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 16px;
+  color:#1c7752;
+  margin: 0;
+  font-family: 'Lobster', serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutHeader h1 {
+    font-size: 32px;
+  }
+
+  .aboutHeader p {
+    font-size: 16px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,172 @@
+.bookDetailsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.backLink {
+  display: inline-block;
+  color: #0c6634;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.backLink:hover {
+  text-decoration:underline;
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+}
+
+.bookImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookInformation h1 {
+  font-size: 25px;
+  color: #050709;
+  margin-bottom: 15px;
+  font-family: 'Lobster', serif;
+}
+
+.bookAuthor {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  font-weight: normal;
+   font-family: 'Lobster', serif;
+}
+
+.bookPrice {
+  font-size: 20px;
+  font-weight: bold;
+  color: #130d0c;
+  margin-bottom: 30px;
+}
+
+.bookMeta {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.metaItem {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.metaItem:last-child {
+  border-bottom: none;
+}
+
+.metaLabel {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 10px;
+  min-width: 100px;
+}
+
+.purchaseSection {
+  margin-bottom: 30px;
+}
+
+.quantitySelector {
+  margin-bottom: 15px;
+}
+
+.quantitySelector label {
+  display: block;
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quantityButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantityButtons button {
+  width: 30px;
+  height: 30px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.quantityButtons button:hover {
+  background-color: #1a8546;
+}
+
+.quantityButtons span {
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+.addToCartButton {
+  width: 100%;
+  background-color: #217d47;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.addToCartButton:hover {
+  background-color: #155c32;
+}
+
+.bookDescription {
+  margin-top: 100px;
+}
+
+.bookDescription h3 {
+  font-size: 30px;
+  color: #0e1318;
+  margin-bottom: 15px;
+  font-family: 'Lobster', serif;
+  
+}
+
+.bookDescription p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #344251;
+  margin-bottom:100px ;
+}
+
+@media only screen and (max-width: 768px) {
+  .detailsContainer {
+    grid-template-columns:1fr;
+  }
+
+  .bookInformation h1 {
+    font-size: 17px;
+  }
+
+  .bookAuthor {
+    font-size: 12px;
+  }
+
+  .bookPrice {
+    font-size: 15px;
+  }
+}

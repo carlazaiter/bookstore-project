@@ -1,0 +1,165 @@
+.booksPage {
+  padding: 40px 20px;
+  max-width: 1400x;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.pageHeader h1 {
+  font-size: 42px;
+  color: #0c6634;
+  margin-bottom: 30px;
+  font-family: 'Lobster', serif;
+
+}
+
+.searchBox {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchBox input {
+  width:100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(176, 174, 174);
+  border-radius: 6px;
+}
+
+.searchBox input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdownBtn {
+  background-color:#a6b9a7;
+  opacity:50% ;
+  color: rgb(14, 11, 11);
+  padding: 10px 90px;
+  font-size: 14px;
+  border: none;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+.dropdownBtn:hover {
+  background-color: #9daf9e;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(27, 26, 26, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownItem {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f1f1f1;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 70px;
+}
+
+.bookItem {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.bookItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookItem img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.bookInfo {
+  padding: 20px;
+}
+
+.bookInfo h3 {
+  font-size: 20px;
+  color: #090c0e;
+  margin-bottom: 8px;
+  font-family: 'Lobster', serif;
+}
+
+.authorName {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+   font-family: 'Lobster', serif;
+}
+
+.categoryTag {
+  display: inline-block;
+  background-color: #ecf0f1;
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.bookPrice {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1716;
+  margin: 15px 0;
+}
+
+.viewButton {
+  width: 100%;
+  background-color: #0c6634;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.viewButton:hover {
+  background-color: #0b532c;
+}
+
+@media only screen and (max-width: 768px) {
+  .booksGrid {
+    grid-auto-flow: unset;
+  }
+
+  .pageHeader h1 {
+    font-size: 35px;
+  }
+}
