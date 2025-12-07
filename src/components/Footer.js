@@ -7,11 +7,10 @@ const Footer = () => {
 
   return (
     <div className="footer">
-
-      {/* Top Section */}
+      
       <div className="footer-content">
 
-        {/* About */}
+      
         <div className="footer-box">
           <h2 className="footer-logo">📚 BookStore</h2>
           <p className="footer-text">
@@ -20,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
+       
         <div className="footer-box">
           <h3 className="footer-title">Quick Links</h3>
           <ul>
@@ -31,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Customer Service */}
+       
         <div className="footer-box">
           <h3 className="footer-title">Customer Service</h3>
           <ul>
@@ -42,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Socials */}
+        
         <div className="footer-box">
           <h3 className="footer-title">Connect</h3>
 
@@ -68,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Section */}
+    
       <div className="footer-bottom">
         <p>© {year} BookStore. All rights reserved.</p>
       </div>
